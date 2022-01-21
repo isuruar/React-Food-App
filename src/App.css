@@ -1,38 +1,374 @@
-.App {
-  text-align: center;
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+body {
+  background-color: #fafafa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.order-nav-padding {
+  padding-top: 9px;
+  padding-left: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.order-nav-input-padding {
+  padding-top: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.search-outline {
+  border: 1px solid black;
+}
+
+.order-shadow {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 4px;
+}
+
+.order-item {
+  border-left: 6px solid #138c00;
+  height: 76px;
+  padding: 8px;
+}
+
+.order-item-options {
+  border-left: 6px solid #138c00;
+  height: 40px;
+  padding: 8px;
+  color: #520438;
+  font-weight: bold;
+  background-color: #D2D2D2;
+}
+
+.order-wrap {
+  padding-right: 20px;
+}
+
+.order-display-icon-wrap>.order-icon {
+  height: 60px;
+  width: 60px;
   color: white;
+  background: #bfbfbf;
+  border-radius: 100%;
+  font-size: 26px;
 }
 
-.App-link {
-  color: #61dafb;
+.order-display-icon-wrap>.order2-icon {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background: #cc52cd;
+  border-radius: 100%;
+  font-size: 26px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.order-id-wrap {
+  line-height: 60px;
+}
+
+
+.order-image {
+  width: 60px;
+  height: 55px;
+  border-radius: 6px;
+}
+
+.order-id-wrap>span {
+  font-weight: bold;
+}
+
+.order-description-wrap {
+  padding-top: 12px;
+}
+
+
+.order-description-wrap-beef>h4 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.order-description-wrap>h5 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.order-description-wrap>p {
+  font-size: 12px;
+}
+
+.order-location-wrap {
+  padding-top: 6px;
+}
+
+.order-fa-content {
+  width: 100%;
+}
+
+.order-fa-content>.order-fa-info {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.order-phone-wrap {
+  line-height: 60px;
+}
+
+.order-status-wrap {
+  line-height: 60px;
+  color: #0eb84c;
+  font-weight: bold;
+}
+
+.order-price-wrap {
+  line-height: 60px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.order-collapse-wrap {
+  line-height: 60px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.card-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.selfie {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+.cards {
+  border-left: 6px solid #138c00;
+}
+
+.bottombutton {
+  text-transform: capitalize;
+  font-size: 15px;
+  width: 150px;
+  height: 45px;
+  background-color: #d305d3 !important;
+}
+
+.card-body {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.order-border-line-top {
+  border-top: 1px solid #acacac;
+  background-color: #e4e3e3 !important;
+}
+
+.card-footer {
+  border-top: 1px dotted rgba(0, 0, 0, .125);
+}
+
+.note-person-name {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.note-date {
+  text-align: right;
+  font-size: 15px;
+}
+
+.note-footer-image>img {
+  width: 100%;
+  height: auto;
+}
+
+/* .nav-link.active {
+  background-color: #fafafa;
+} */
+
+.nav-link.active {
+  border-bottom: 3px solid #ff00ff !important;
+  color: rgb(3, 3, 3) !important;
+  text-transform: capitalize !important;
+  font-weight: bold !important;
+  background-color: #fafafa !important;
+}
+
+.form-control {
+  /* border: 1px solid black !important; */
+}
+
+@media (max-width:500px) {
+  font-size: 7px;
+}
+
+/* next hub max */
+@media (max-width:1280px) {
+  .order-fa-content>.order-fa-info {
+    font-size: 11px;
+    padding-left: 8px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .order-nav-input-padding {
+    width: 10%;
+  }
+
+  .tabs {
+    width: 40%;
+  }
+}
+
+/* next hub */
+@media (max-width:1024px) {
+  .order-description-wrap {
+    padding-top: 4px;
+    font-size: 5px;
+  }
+
+  .collection {
+    font-size: 14px !important;
+  }
+
+  .schedule {
+    font-size: 13px !important;
+  }
+
+  .location1 {
+    font-size: 9px !important;
+  }
+
+  .order-status-wrap {
+    font-size: 12px !important;
+  }
+
+  .order-price-wrap {
+    font-size: 12px !important;
+  }
+
+  .card-text {
+    font-size: 12px !important;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .order-id-wrap {
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .order-description-wrap>p {
+    display: none;
+  }
+
+  .order-fa-icon>FontAwesomeIcon {
+    display: none !important;
+  }
+
+  .order-item {
+    height: 390px;
+  }
+
+  .order-price-wrap {
+    line-height: 30px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .order-status-wrap {
+    line-height: 40px;
+    color: #0eb84c;
+    font-weight: bold;
+  }
+
+  .order-border-line-top {
+    border-top: 1px solid #acacac;
+    background-color: #e4e3e3 !important;
+    height: 320px;
+  }
+
+  .order-border-line-top-single {
+    border-top: 1px solid #acacac;
+    background-color: #e4e3e3 !important;
+    height: 180px;
+  }
+
+  .order-image {
+    height: 100px;
+    width: 100px;
+    /* padding-bottom: 50px; */
+  }
+
+  .order-id-wrap-beef {
+    padding-top: 50px !important;
+    font-weight: bold;
+  }
+
+  .note-footer-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .card-text {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+
+  .note-date {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .order-nav-padding {
+    width: 100px;
+  }
+
+  .input-group {
+    width: 340px;
+  }
+}
+
+@media (max-width:768px) {
+  .order-item {
+    height: 180px;
+  }
+
+  .input-group {
+    width: 160px;
+  }
+
+  .order-display-icon-wrap {
+    display: none;
+  }
+
+  .order-id-wrap {
+    width: 90px;
+  }
+
+  .order-status-wrap {
+    width: 80px;
+  }
+
+  .order-border-line-top-single {
+    border-top: 1px solid #acacac;
+    background-color: #e4e3e3 !important;
+    height: 180px;
+  }
+
+  .order-id-wrap-beef {
+    padding-top: 20px !important;
+    font-weight: bold;
+  }
+
+  .order-price-wrap-top {
+    line-height: 60px;
+    /* text-align: right; */
+    width: 70px;
+    font-weight: bold;
+    font-size: 12px;
   }
 }
